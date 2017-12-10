@@ -1,0 +1,21 @@
+<h3>Top Stores</h3>
+
+<div class="container container-fluid">
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let store of stores">
+        <a routerLink="/stores/{{store.id}}" style="text-decoration:none">
+        <div class="panel panel-primary"  >
+            <div class="panel-heading">
+              <h3 class="panel-title">{{store.desc}}</h3>
+            </div>
+            <div class="panel-body">
+              <p>{{store.type}}</p>
+              <p>{{store.address}}</p>
+            </div>
+          </div>
+        </a>
+    </div>
+  </div>
+
+</div>
+
